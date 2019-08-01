@@ -83,7 +83,7 @@ public enum ShardMethodEnum
      * @param shardMethod String representing the ShardMethod name
      * @return true if the method is EXPLICIT_ID based
      */
-    public static Boolean isExplicitIdMethod(String shardMethod)
+    public static boolean isExplicitIdMethod(String shardMethod)
     {
         
         switch (shardMethod.toUpperCase())
@@ -91,9 +91,9 @@ public enum ShardMethodEnum
             case "EXPLICIT_ID":
             case "EXPLICIT_ID_FALLBACK_DBID":
             case "EXPLICIT_ID_FALLBACK_LRIS":
-                return Boolean.TRUE;
+                return true;
             default:
-                return Boolean.FALSE;
+                return false;
         }
         
     }
